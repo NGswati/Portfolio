@@ -3,12 +3,12 @@ import { Publication } from './components/Publication';
 const publications = [
   {
    title: 'Detecting Toxicity in Conversational AI',
-   authors: 'Swati Gupta, James Clark',  
+   authors: 'Swati Gupta',  
    conference: 'NeurIPS 2022'
   },
   {
     title: 'Optimizing Semantic Consistency in Dialogue',
-    authors: 'Swati Gupta, Marie Wang',
+    authors: 'Swati Gupta',
     journal: 'AI Journal 2023'
   }
 ];
