@@ -2,16 +2,16 @@
 
 const experiences = [
   {
-    company: 'Google',
-    role: 'Software Engineer Intern',
-    date: 'Summer 2022',
-    desc: 'Developed and launched new features for Google Cloud.'
+    company: 'IIIT Guwahati',
+    role: 'Research Intern',
+    date: 'Winter 2023',
+    desc: 'Published paper on Real Time Multicore Processor scheduling.'
   },
   {
-    company: 'Anthropic',
-    role: 'AI Research Intern',
+    company: 'IIIS Delhi',
+    role: 'Software Engineering Research Intern',
     date: 'Jan - May 2023', 
-    desc: 'Published 3 papers on conversational AI.'
+    desc: 'Published papers on Fuzzy topsis .'
   }
 ];
 
