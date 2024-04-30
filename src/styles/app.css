@@ -1,22 +1,21 @@
-import ProfileImg from './assets/profile.jpg';
+body {
+  margin: 0;
+  overflow: hidden;
+}
 
-export default function About() {
-  return (
-    <>
-      <div className="content">
-        <h1>About Me</h1>
+canvas {
+  display: block;
+}
 
-        <img src={ProfileImg} className="profile"/>
-
-        <p>
-          I'm a B.Tech student at IIIT Guwahati class of 2025. I have experience building web apps with React, Node.js, and other tools.
-        </p>
-
-        <h3>Skills</h3>
-        <p>
-          JavaScript (React, Node.js) / Python (NumPy, Pandas) / C++ / MySQL
-        </p>   
-      </div>
-    </>
-  );
+#notes {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
 }
