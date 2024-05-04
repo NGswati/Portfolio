@@ -13,7 +13,7 @@ function Main() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Intro />} />
+                <Route path="/Portfolio" element={<Intro />} />
                 <Route path="/app" element={<App />} />
                 <Route path="/school" element={<School />} />
                 {/* <Route path="/experience" element={<Experience />} />
