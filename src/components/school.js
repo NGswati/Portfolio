@@ -9,7 +9,10 @@ const School = () => {
                 This school is known for its excellence in education and
                 overall development of students.
             </p>
-            {/* Add more details and content about the school here */}
+            <p>
+                I scored 92.6 percentage in 12th class.
+    </p>
+
         </div>
     );
 }
