@@ -17,7 +17,8 @@ const ThreeScene = () => {
   const cube = useRef(null);
   const controls = useRef(null);
   const notesDiv = useRef(null);
-
+  
+//Added checkpoints and constants
   const checkpoints = [0, 5, 8, 12, 30, 33];
   const notes = [
     "Checkpoint 1: Move the right arrow key!",
@@ -48,7 +49,7 @@ const ThreeScene = () => {
       cube.current = new THREE.Mesh(geometry, material);
       scene.current.add(cube.current);
       
-
+  //Control 3D and camera angle
       controls.current = new OrbitControls(camera.current, renderer.current.domElement);
       controls.current.enableDamping = true;
       controls.current.dampingFactor = 0.25;
@@ -59,7 +60,8 @@ const ThreeScene = () => {
 
       document.addEventListener('mousedown', onDocumentMouseDown, false);
       document.addEventListener('keydown', onKeyDown);
-      
+    
+      //define Animates 
       createText();
       createSchools();
       createSun();
@@ -103,7 +105,7 @@ const ThreeScene = () => {
       setShowNote(true);
       setTimeout(() => setShowNote(false), 2000);
     };
-
+//movement checks and updates
     const handleArrowRight = () => {
       if (cube.current) {
         cube.current.scale.x = 1 + Math.sin(xMovement) * 0.1;
@@ -149,7 +151,7 @@ const ThreeScene = () => {
       })
     };
     
-
+//Alert and orientation handler
     const onDocumentMouseDown = (event) => {
       event.preventDefault();
 
@@ -172,7 +174,7 @@ const ThreeScene = () => {
         }
       }
     };
-
+//size handler
     const handleResize = () => {
       if (camera.current && renderer.current) {
         camera.current.aspect = window.innerWidth / window.innerHeight;
